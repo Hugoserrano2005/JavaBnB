@@ -62,14 +62,15 @@ public class FrameRegistro extends javax.swing.JFrame {
         jSeparator7 = new javax.swing.JSeparator();
         jSeparator8 = new javax.swing.JSeparator();
         jSeparator9 = new javax.swing.JSeparator();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jnombre = new javax.swing.JTextField();
         jesVIP = new javax.swing.JCheckBox();
+        jPanel2 = new javax.swing.JPanel();
+        LabelLogo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jtelefono.setBackground(new java.awt.Color(204, 204, 255));
+        jtelefono.setBackground(new java.awt.Color(220, 154, 98));
         jtelefono.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setText("TELEFONO");
@@ -78,6 +79,7 @@ public class FrameRegistro extends javax.swing.JFrame {
         jLabel10.setText("DNI");
         jtelefono.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
 
+        jdni.setBackground(new java.awt.Color(220, 154, 98));
         jdni.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
         jdni.setForeground(new java.awt.Color(204, 204, 204));
         jdni.setText("Ingrese el DNI");
@@ -89,6 +91,7 @@ public class FrameRegistro extends javax.swing.JFrame {
         });
         jtelefono.add(jdni, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 178, -1));
 
+        jphonenumber.setBackground(new java.awt.Color(220, 154, 98));
         jphonenumber.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
         jphonenumber.setForeground(new java.awt.Color(204, 204, 204));
         jphonenumber.setText("Ingrese el teléfono");
@@ -104,6 +107,7 @@ public class FrameRegistro extends javax.swing.JFrame {
         jLabel11.setText("TITULAR DE LA TARJETA");
         jtelefono.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 170, -1));
 
+        jmailsign.setBackground(new java.awt.Color(220, 154, 98));
         jmailsign.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
         jmailsign.setForeground(new java.awt.Color(204, 204, 204));
         jmailsign.setText("Ingrese el correo");
@@ -119,11 +123,13 @@ public class FrameRegistro extends javax.swing.JFrame {
         jLabel12.setText("NUMERO DE TARJETA");
         jtelefono.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, -1, -1));
 
+        jpasswordsign.setBackground(new java.awt.Color(220, 154, 98));
         jpasswordsign.setForeground(new java.awt.Color(204, 204, 204));
         jpasswordsign.setText("Ingrese la contraseña");
         jpasswordsign.setBorder(null);
         jtelefono.add(jpasswordsign, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 180, -1));
 
+        jnumtarj.setBackground(new java.awt.Color(220, 154, 98));
         jnumtarj.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
         jnumtarj.setForeground(new java.awt.Color(204, 204, 204));
         jnumtarj.setText("Ingrese el numero de tarjeta");
@@ -143,6 +149,7 @@ public class FrameRegistro extends javax.swing.JFrame {
         });
         jtelefono.add(bregistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 360, -1, -1));
 
+        jtitular.setBackground(new java.awt.Color(220, 154, 98));
         jtitular.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
         jtitular.setForeground(new java.awt.Color(204, 204, 204));
         jtitular.setText("Ingrese el nombre del titular");
@@ -165,6 +172,7 @@ public class FrameRegistro extends javax.swing.JFrame {
         jLabel7.setText("CORREO");
         jtelefono.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 100, -1));
 
+        jfcaducidad.setBackground(new java.awt.Color(220, 154, 98));
         jfcaducidad.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
         jfcaducidad.setForeground(new java.awt.Color(204, 204, 204));
         jfcaducidad.setText("Ingrese la fecha de caducidad");
@@ -188,45 +196,42 @@ public class FrameRegistro extends javax.swing.JFrame {
         jtelefono.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 180, 20));
         jtelefono.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 180, 20));
 
-        jPanel2.setBackground(new java.awt.Color(102, 204, 255));
-
-        ImageIcon a = new ImageIcon("src/main/java/com/images/JAVA.png");
-        jLabel1.setIcon(a);
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(65, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(298, Short.MAX_VALUE))
-        );
-
-        jtelefono.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 240, 500));
-
         jnombre.setText("Ingrese el nombre");
         jtelefono.add(jnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, -1));
 
         jesVIP.setText("jCheckBox1");
         jtelefono.add(jesVIP, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, -1, -1));
 
+        jPanel2.setBackground(new java.awt.Color(169, 116, 81));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        ImageIcon a = new ImageIcon("src/main/java/com/images/logo2rec.png");
+        LabelLogo.setIcon(a);
+        jPanel2.add(LabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 106, 125));
+
+        jLabel1.setBackground(new java.awt.Color(80, 0, 0));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(80, 0, 0));
+        jLabel1.setText("JAVABNB");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 90, -1));
+
+        jtelefono.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 240, 500));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jtelefono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(124, 124, 124)
+                .addComponent(jtelefono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jtelefono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jtelefono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(82, 82, 82))
         );
 
         pack();
@@ -434,6 +439,7 @@ public class FrameRegistro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LabelLogo;
     private javax.swing.JButton bregistrarse;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
