@@ -38,7 +38,7 @@ public class FrameRegistro extends javax.swing.JFrame {
     private void initComponents() {
 
         jtelefono = new javax.swing.JPanel();
-        jdni = new javax.swing.JTextField();
+        jnombre = new javax.swing.JTextField();
         jphonenumber = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jmailsign = new javax.swing.JTextField();
@@ -59,13 +59,12 @@ public class FrameRegistro extends javax.swing.JFrame {
         jSeparator7 = new javax.swing.JSeparator();
         jSeparator8 = new javax.swing.JSeparator();
         jSeparator9 = new javax.swing.JSeparator();
-        jnombre = new javax.swing.JTextField();
         jesVIP = new javax.swing.JCheckBox();
         jPanel2 = new javax.swing.JPanel();
         LabelLogo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator10 = new javax.swing.JSeparator();
-        jdni1 = new javax.swing.JTextField();
+        jdni = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -76,17 +75,17 @@ public class FrameRegistro extends javax.swing.JFrame {
         jtelefono.setBackground(new java.awt.Color(220, 154, 98));
         jtelefono.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jdni.setBackground(new java.awt.Color(220, 154, 98));
-        jdni.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
-        jdni.setForeground(new java.awt.Color(204, 204, 204));
-        jdni.setText("Ingrese el DNI");
-        jdni.setBorder(null);
-        jdni.addActionListener(new java.awt.event.ActionListener() {
+        jnombre.setBackground(new java.awt.Color(220, 154, 98));
+        jnombre.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
+        jnombre.setForeground(new java.awt.Color(204, 204, 204));
+        jnombre.setText("Ingrese el nombre");
+        jnombre.setBorder(null);
+        jnombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jdniActionPerformed(evt);
+                jnombreActionPerformed(evt);
             }
         });
-        jtelefono.add(jdni, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 178, -1));
+        jtelefono.add(jnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 178, -1));
 
         jphonenumber.setBackground(new java.awt.Color(220, 154, 98));
         jphonenumber.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
@@ -190,9 +189,6 @@ public class FrameRegistro extends javax.swing.JFrame {
         jtelefono.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 380, 180, 20));
         jtelefono.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 180, 20));
 
-        jnombre.setText("Ingrese el nombre");
-        jtelefono.add(jnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 450, -1, -1));
-
         jesVIP.setText("Contratar servicio VIP");
         jesVIP.setActionCommand("VipJCheckBox");
         jtelefono.add(jesVIP, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, -1, -1));
@@ -213,17 +209,17 @@ public class FrameRegistro extends javax.swing.JFrame {
         jtelefono.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 240, 510));
         jtelefono.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 180, 20));
 
-        jdni1.setBackground(new java.awt.Color(220, 154, 98));
-        jdni1.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
-        jdni1.setForeground(new java.awt.Color(204, 204, 204));
-        jdni1.setText("Ingrese el DNI");
-        jdni1.setBorder(null);
-        jdni1.addActionListener(new java.awt.event.ActionListener() {
+        jdni.setBackground(new java.awt.Color(220, 154, 98));
+        jdni.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
+        jdni.setForeground(new java.awt.Color(204, 204, 204));
+        jdni.setText("Ingrese el DNI");
+        jdni.setBorder(null);
+        jdni.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jdni1ActionPerformed(evt);
+                jdniActionPerformed(evt);
             }
         });
-        jtelefono.add(jdni1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 178, -1));
+        jtelefono.add(jdni, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 178, -1));
 
         jLabel15.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         jLabel15.setText("CORREO");
@@ -353,7 +349,7 @@ public class FrameRegistro extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Rellene la password");
             check++;
         }
-        if(jdni.getText().equals("") || jdni.getText().equals("Ingrese el DNI") || esDni(jdni.getText()) == false){
+        if(jnombre.getText().equals("") || jnombre.getText().equals("Ingrese el DNI") || esDni(jnombre.getText()) == false){
             JOptionPane.showMessageDialog(null, "Rellene el DNI");
             check++;
         }
@@ -379,10 +375,10 @@ public class FrameRegistro extends javax.swing.JFrame {
         }
         
         
-        ClienteParticular particular = new ClienteParticular(jdni.getText(), jnombre.getText(), jmailsign.getText(), jpasswordsign.getText(), jphonenumber.getText(), jesVIP.isEnabled());
+        ClienteParticular particular = new ClienteParticular(jnombre.getText(), jnombre.getText(), jmailsign.getText(), jpasswordsign.getText(), jphonenumber.getText(), jesVIP.isEnabled());
         
         //Asignamos valores a los atributos con los SET de Cliente Particular
-        particular.setDni(jdni.getText());
+        particular.setDni(jnombre.getText());
         particular.setNombre(jnombre.getText());
         particular.setCorreoElectronico(jmailsign.getText());
         particular.setClave(jpasswordsign.getText());
@@ -407,9 +403,9 @@ public class FrameRegistro extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_bregistrarseActionPerformed
 
-    private void jdniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jdniActionPerformed
+    private void jnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jnombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jdniActionPerformed
+    }//GEN-LAST:event_jnombreActionPerformed
 
     private void jphonenumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jphonenumberActionPerformed
         // TODO add your handling code here:
@@ -427,9 +423,9 @@ public class FrameRegistro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jfcaducidadActionPerformed
 
-    private void jdni1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jdni1ActionPerformed
+    private void jdniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jdniActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jdni1ActionPerformed
+    }//GEN-LAST:event_jdniActionPerformed
 
     /**
      * @param args the command line arguments
@@ -490,7 +486,6 @@ public class FrameRegistro extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTextField jdni;
-    private javax.swing.JTextField jdni1;
     private javax.swing.JCheckBox jesVIP;
     private javax.swing.JTextField jfcaducidad;
     private javax.swing.JTextField jmailsign;
