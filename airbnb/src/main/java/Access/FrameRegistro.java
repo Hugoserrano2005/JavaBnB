@@ -38,8 +38,6 @@ public class FrameRegistro extends javax.swing.JFrame {
     private void initComponents() {
 
         jtelefono = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jdni = new javax.swing.JTextField();
         jphonenumber = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
@@ -50,7 +48,6 @@ public class FrameRegistro extends javax.swing.JFrame {
         bregistrarse = new javax.swing.JButton();
         jtitular = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jfcaducidad = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
@@ -67,17 +64,17 @@ public class FrameRegistro extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         LabelLogo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jSeparator10 = new javax.swing.JSeparator();
+        jdni1 = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jtelefono.setBackground(new java.awt.Color(220, 154, 98));
         jtelefono.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel9.setText("TELEFONO");
-        jtelefono.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 90, -1));
-
-        jLabel10.setText("DNI");
-        jtelefono.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
 
         jdni.setBackground(new java.awt.Color(220, 154, 98));
         jdni.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
@@ -89,7 +86,7 @@ public class FrameRegistro extends javax.swing.JFrame {
                 jdniActionPerformed(evt);
             }
         });
-        jtelefono.add(jdni, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 178, -1));
+        jtelefono.add(jdni, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 178, -1));
 
         jphonenumber.setBackground(new java.awt.Color(220, 154, 98));
         jphonenumber.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
@@ -105,7 +102,7 @@ public class FrameRegistro extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         jLabel11.setText("TITULAR DE LA TARJETA");
-        jtelefono.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 170, -1));
+        jtelefono.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 170, -1));
 
         jmailsign.setBackground(new java.awt.Color(220, 154, 98));
         jmailsign.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
@@ -121,7 +118,7 @@ public class FrameRegistro extends javax.swing.JFrame {
 
         jLabel12.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         jLabel12.setText("NUMERO DE TARJETA");
-        jtelefono.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, -1, -1));
+        jtelefono.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, -1, -1));
 
         jpasswordsign.setBackground(new java.awt.Color(220, 154, 98));
         jpasswordsign.setForeground(new java.awt.Color(204, 204, 204));
@@ -139,7 +136,7 @@ public class FrameRegistro extends javax.swing.JFrame {
                 jnumtarjActionPerformed(evt);
             }
         });
-        jtelefono.add(jnumtarj, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 178, -1));
+        jtelefono.add(jnumtarj, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, 178, -1));
 
         bregistrarse.setText("Registrarse");
         bregistrarse.addActionListener(new java.awt.event.ActionListener() {
@@ -147,7 +144,7 @@ public class FrameRegistro extends javax.swing.JFrame {
                 bregistrarseActionPerformed(evt);
             }
         });
-        jtelefono.add(bregistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 360, -1, -1));
+        jtelefono.add(bregistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 440, -1, -1));
 
         jtitular.setBackground(new java.awt.Color(220, 154, 98));
         jtitular.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
@@ -159,18 +156,15 @@ public class FrameRegistro extends javax.swing.JFrame {
                 jtitularActionPerformed(evt);
             }
         });
-        jtelefono.add(jtitular, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 178, -1));
+        jtelefono.add(jtitular, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 178, -1));
 
         jLabel6.setFont(new java.awt.Font("Caladea", 1, 24)); // NOI18N
         jLabel6.setText("REGISTRARSE");
         jtelefono.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
 
-        jLabel13.setText("FECHA DE CADUCIDAD");
-        jtelefono.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, -1, -1));
-
         jLabel7.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        jLabel7.setText("CORREO");
-        jtelefono.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 100, -1));
+        jLabel7.setText("FECHA DE CADUCIDAD");
+        jtelefono.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 330, 180, -1));
 
         jfcaducidad.setBackground(new java.awt.Color(220, 154, 98));
         jfcaducidad.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
@@ -182,25 +176,26 @@ public class FrameRegistro extends javax.swing.JFrame {
                 jfcaducidadActionPerformed(evt);
             }
         });
-        jtelefono.add(jfcaducidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, 178, -1));
+        jtelefono.add(jfcaducidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 178, -1));
 
         jLabel8.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         jLabel8.setText("CONTRASEÑA");
         jtelefono.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, -1, -1));
         jtelefono.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, -1, -1));
-        jtelefono.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 180, 20));
+        jtelefono.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 180, 20));
         jtelefono.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 180, 20));
         jtelefono.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 180, 20));
         jtelefono.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 180, 20));
-        jtelefono.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 180, 20));
-        jtelefono.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 180, 20));
-        jtelefono.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 180, 20));
+        jtelefono.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 180, 20));
+        jtelefono.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 380, 180, 20));
+        jtelefono.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 180, 20));
 
         jnombre.setText("Ingrese el nombre");
-        jtelefono.add(jnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, -1));
+        jtelefono.add(jnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 450, -1, -1));
 
-        jesVIP.setText("jCheckBox1");
-        jtelefono.add(jesVIP, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, -1, -1));
+        jesVIP.setText("Contratar servicio VIP");
+        jesVIP.setActionCommand("VipJCheckBox");
+        jtelefono.add(jesVIP, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(169, 116, 81));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -215,23 +210,52 @@ public class FrameRegistro extends javax.swing.JFrame {
         jLabel1.setText("JAVABNB");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 90, -1));
 
-        jtelefono.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 240, 500));
+        jtelefono.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 240, 510));
+        jtelefono.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 180, 20));
+
+        jdni1.setBackground(new java.awt.Color(220, 154, 98));
+        jdni1.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
+        jdni1.setForeground(new java.awt.Color(204, 204, 204));
+        jdni1.setText("Ingrese el DNI");
+        jdni1.setBorder(null);
+        jdni1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jdni1ActionPerformed(evt);
+            }
+        });
+        jtelefono.add(jdni1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 178, -1));
+
+        jLabel15.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel15.setText("CORREO");
+        jtelefono.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 100, -1));
+
+        jLabel16.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel16.setText("NOMBRE");
+        jtelefono.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 100, -1));
+
+        jLabel17.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel17.setText("TELEFONO");
+        jtelefono.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 100, -1));
+
+        jLabel18.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel18.setText("DNI");
+        jtelefono.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 100, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(124, 124, 124)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jtelefono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(20, 20, 20)
                 .addComponent(jtelefono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(82, 82, 82))
+                .addGap(24, 24, 24))
         );
 
         pack();
@@ -403,6 +427,10 @@ public class FrameRegistro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jfcaducidadActionPerformed
 
+    private void jdni1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jdni1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jdni1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -442,16 +470,18 @@ public class FrameRegistro extends javax.swing.JFrame {
     private javax.swing.JLabel LabelLogo;
     private javax.swing.JButton bregistrarse;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
@@ -460,6 +490,7 @@ public class FrameRegistro extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTextField jdni;
+    private javax.swing.JTextField jdni1;
     private javax.swing.JCheckBox jesVIP;
     private javax.swing.JTextField jfcaducidad;
     private javax.swing.JTextField jmailsign;
