@@ -37,7 +37,7 @@ public class FrameLogin extends javax.swing.JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 // Borrar el texto cuando se hace clic en el campo de texto
-                if (jpasswordlog.getPassword().equals(mensajeOriginalContraseña)) {
+                if (jpasswordlog.getText().equals(mensajeOriginalContraseña)) {
                     jpasswordlog.setText("");
                 }
             }
@@ -57,7 +57,7 @@ public class FrameLogin extends javax.swing.JFrame {
             @Override
             public void focusLost(FocusEvent e) {
                 // Restaurar el mensaje original si el campo está vacío
-                if (String.valueOf(jpasswordlog.getPassword()).isEmpty()) {
+                if (jpasswordlog.getText().equals("")) {
                     jpasswordlog.setText(mensajeOriginalContraseña);
                 }
             }
@@ -234,18 +234,18 @@ public class FrameLogin extends javax.swing.JFrame {
     private void bloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bloginActionPerformed
         // TODO add your handling code here:
         if(jmaillog.getText().equals("")){
-            if(jpasswordlog.getPassword().equals("")){
+            if(jpasswordlog.getText().equals("")){
                 JOptionPane.showMessageDialog(null, "Rellene el correo y la contraseña");
             }
             else{
                 JOptionPane.showMessageDialog(null, "Rellene el correo");
             }
         }
-        else if(jpasswordlog.getPassword().equals("")){
+        else if(jpasswordlog.getText().equals("")){
             JOptionPane.showMessageDialog(null, "Rellene la contraseña");
         }
         else {
-            if (jmaillog.getText().equals("admin@javabnb.com")&&(jpasswordlog.getPassword().equals("admin"))){
+            if (jmaillog.getText().equals("admin@javabnb.com")&&(jpasswordlog.getText().equals("admin"))){
                 FrameAdmin pantallaAdmin= new FrameAdmin();
                 pantallaAdmin.setVisible(true);
                 dispose();
