@@ -87,6 +87,7 @@ public class FrameLoginAdmin extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         MenuInicio = new javax.swing.JMenu();
         pagInicio = new javax.swing.JMenuItem();
@@ -173,6 +174,10 @@ public class FrameLoginAdmin extends javax.swing.JFrame {
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 90, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 240, 500));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 2, 36)); // NOI18N
+        jLabel2.setText("Administrador");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
         jMenuBar1.setBackground(new java.awt.Color(169, 116, 81));
         jMenuBar1.setBorder(null);
@@ -350,6 +355,7 @@ public class FrameLoginAdmin extends javax.swing.JFrame {
     private javax.swing.JMenuItem Quit;
     private javax.swing.JButton blogin;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
