@@ -417,7 +417,7 @@ public class FrameRegistro extends javax.swing.JFrame {
         particular.setDni(jnombre.getText());
         particular.setNombre(jnombre.getText());
         particular.setCorreoElectronico(jmailsign.getText());
-        particular.setClave(jpasswordsign.getText());
+        particular.setClave(String.valueOf(jpasswordsign.getPassword()));
         particular.setTelefono(jphonenumber.getText());
         particular.setesVIP(jesVIP.isEnabled());
         

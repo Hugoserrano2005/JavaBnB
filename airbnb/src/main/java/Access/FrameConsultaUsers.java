@@ -57,7 +57,7 @@ public class FrameConsultaUsers extends javax.swing.JFrame {
                 .addContainerGap(327, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 0, 240, 500));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 240, 500));
 
         jLabel1.setFont(new java.awt.Font("Caladea", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
