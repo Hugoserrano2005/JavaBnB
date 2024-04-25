@@ -29,8 +29,8 @@ public class FrameInicio extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        AccesoAdmin = new javax.swing.JButton();
-        AccesoCliente = new javax.swing.JButton();
+        Registro = new javax.swing.JButton();
+        InicioSesion = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -40,23 +40,23 @@ public class FrameInicio extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(220, 154, 98));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        AccesoAdmin.setText("Acceso Admin");
-        AccesoAdmin.setBorder(null);
-        AccesoAdmin.addActionListener(new java.awt.event.ActionListener() {
+        Registro.setText("Registrarse");
+        Registro.setBorder(null);
+        Registro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AccesoAdminActionPerformed(evt);
+                RegistroActionPerformed(evt);
             }
         });
-        jPanel1.add(AccesoAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 380, 130, 30));
+        jPanel1.add(Registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 380, 130, 30));
 
-        AccesoCliente.setText("Acceso Cliente");
-        AccesoCliente.setBorder(null);
-        AccesoCliente.addActionListener(new java.awt.event.ActionListener() {
+        InicioSesion.setText("Iniciar Sesión");
+        InicioSesion.setBorder(null);
+        InicioSesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AccesoClienteActionPerformed(evt);
+                InicioSesionActionPerformed(evt);
             }
         });
-        jPanel1.add(AccesoCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 380, 130, 30));
+        jPanel1.add(InicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 380, 130, 30));
 
         jPanel3.setBackground(new java.awt.Color(169, 116, 81));
 
@@ -117,19 +117,19 @@ public class FrameInicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void AccesoAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AccesoAdminActionPerformed
+    private void RegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistroActionPerformed
         // TODO add your handling code here:
-        FrameLoginAdmin loginAdmin= new FrameLoginAdmin();
-        loginAdmin.setVisible(true);
+        FrameRegistro register = new FrameRegistro();
+        register.setVisible(true);
         dispose();
-    }//GEN-LAST:event_AccesoAdminActionPerformed
+    }//GEN-LAST:event_RegistroActionPerformed
 
-    private void AccesoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AccesoClienteActionPerformed
+    private void InicioSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioSesionActionPerformed
         // TODO add your handling code here:
-        FrameLoginCliente pantallaLogin= new FrameLoginCliente();
+        FrameLogin pantallaLogin= new FrameLogin();
         pantallaLogin.setVisible(true);
         dispose();
-    }//GEN-LAST:event_AccesoClienteActionPerformed
+    }//GEN-LAST:event_InicioSesionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -167,8 +167,8 @@ public class FrameInicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AccesoAdmin;
-    private javax.swing.JButton AccesoCliente;
+    private javax.swing.JButton InicioSesion;
+    private javax.swing.JButton Registro;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

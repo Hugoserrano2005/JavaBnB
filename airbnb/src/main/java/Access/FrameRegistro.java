@@ -69,6 +69,12 @@ public class FrameRegistro extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        Inicio = new javax.swing.JMenuItem();
+        InicioSesion = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        Quit = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -237,21 +243,51 @@ public class FrameRegistro extends javax.swing.JFrame {
         jLabel18.setText("DNI");
         jtelefono.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 100, -1));
 
+        jMenu1.setText("Inicio");
+
+        Inicio.setText("Página inicial");
+        Inicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InicioActionPerformed(evt);
+            }
+        });
+        jMenu1.add(Inicio);
+
+        InicioSesion.setText("Iniciar sesión");
+        InicioSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InicioSesionActionPerformed(evt);
+            }
+        });
+        jMenu1.add(InicioSesion);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Salir");
+
+        Quit.setText("Cerrar aplicación");
+        Quit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuitActionPerformed(evt);
+            }
+        });
+        jMenu2.add(Quit);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jtelefono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jtelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jtelefono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(24, 24, 24))
+                .addComponent(jtelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -263,7 +299,7 @@ public class FrameRegistro extends javax.swing.JFrame {
     public void cambioLogin(int check){
         if(check==0){
             
-            FrameLoginCliente fLog = new FrameLoginCliente();
+            FrameLogin fLog = new FrameLogin();
             fLog.setVisible(true);
             dispose();
         }
@@ -345,7 +381,7 @@ public class FrameRegistro extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Rellene el correo");
             check++;
         }
-        if(jpasswordsign.getText().equals("") || jpasswordsign.getText().equals("Ingrese la contraseña")){
+        if(jpasswordsign.getPassword().equals("") || jpasswordsign.getPassword().equals("Ingrese la contraseña")){
             JOptionPane.showMessageDialog(null, "Rellene la password");
             check++;
         }
@@ -427,6 +463,24 @@ public class FrameRegistro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jdniActionPerformed
 
+    private void InicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioActionPerformed
+        // TODO add your handling code here:
+        FrameInicio inicio = new FrameInicio();
+        inicio.setVisible(true);
+    }//GEN-LAST:event_InicioActionPerformed
+
+    private void InicioSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioSesionActionPerformed
+        // TODO add your handling code here:
+        FrameLogin login = new FrameLogin();
+        login.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_InicioSesionActionPerformed
+
+    private void QuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuitActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_QuitActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -463,7 +517,10 @@ public class FrameRegistro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem Inicio;
+    private javax.swing.JMenuItem InicioSesion;
     private javax.swing.JLabel LabelLogo;
+    private javax.swing.JMenuItem Quit;
     private javax.swing.JButton bregistrarse;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
@@ -475,6 +532,9 @@ public class FrameRegistro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
